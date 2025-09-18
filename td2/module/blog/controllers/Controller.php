@@ -1,0 +1,8 @@
+<?php
+namespace blog\controllers;
+interface Controller {
+
+    function control(): void;
+
+    static function resolve(string $path): bool;
+}
